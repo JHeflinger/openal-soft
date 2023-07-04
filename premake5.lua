@@ -9,15 +9,22 @@ project "OpenAL"
 
 	files
 	{
-		"src/**.h",
-		"src/**.cpp",
-		"include/**.h"
+		"al/**.h",
+		"al/**.cpp",
+		"alc/**.h",
+		"alc/**.cpp",
+		"common/**.h",
+		"common/**.cpp",
+		"core/**.h",
+		"core/**.cpp",
 	}
 
 	includedirs
 	{
-		"include",
-		"src"
+		"al",
+		"alc",
+        "common",
+        "core"
 	}
 
 	filter "system:windows"
